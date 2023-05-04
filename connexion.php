@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         session_start();
 
         // Regenere l'identifiant de session en appelant la fonction cette fonction
-        
+
         session_regenerate_id();
 
         $_SESSION["user_id"] = $user["id"];
@@ -63,10 +63,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         <!-- affiche la valeur du champ de formulaire d'adresse e-mail, tout en s'assurant que la valeur est correctement échappée pour éviter les attaques XSS. -->
         <input type="email" name="email" id="email"
-                value="<?= htmlspecialchars($_POST["email"] ?? "") ?>">
+                value="<?= htmlspecialchars($_POST["email"] ?? "") ?>" placeholder="Votre email">
 
         <label for="password">VOTRE PASSWORD</label>
-        <input type="password" name="password" id="password">
+        <input type="password" name="password" id="password" placeholder="Votre mot de passe">
 
         <button>Connecter</button>
 

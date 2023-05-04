@@ -10,10 +10,10 @@
 <body>
     <h1>S'Inscrire</h1>
 
-    <form action="traitement.php"  method="POST"  novalidate>
+    <form action="traitement.php"  method="POST"  id="inscrire" novalidate>
     <div>
-        <label for="name">VOTRE NOM</label>
-        <input type="text" name="nom" placeholder="Votre nom">
+        <label for="name">VOTRE NOM ET PRENOM</label>
+        <input type="text" name="nom" id="nom" placeholder="Votre nom et prenom">
     </div>
 
     <div>
@@ -27,7 +27,7 @@
     </div>
     <div>
         <label for="password_confirmation">CONFIRMER LE MOT DE PASSE</label>
-        <input type="password" name="password_confirmation" id="password_confirmation">
+        <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Confirmer votre mot de passe">
     </div>
 
     <button type="submit">S'inscrire</button>
